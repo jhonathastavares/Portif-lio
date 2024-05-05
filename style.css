@@ -1,0 +1,59 @@
+/*estilo geral*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    --cor01: #50ff50;
+}
+body{
+    background-color: black;
+    height: 100vh;
+    justify-content: space-between;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/*estilo do cabecalho*/
+
+header {
+    padding: 40px 4%;
+}
+header >.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a {
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover {
+    color: white;
+    transform: scale(1.06);
+}
+header nav ul {
+    list-style-type: none;
+}
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+header .btn-contato button {
+    padding: 10px 40px;
+    font-size: 10px;
+    font-weight: 600;
+    background-color: var(--cor01);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+header .btn-contato button:hover {
+    box-shadow: 0px 0px 8px rgb(0, 128, 0);
+}
